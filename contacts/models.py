@@ -20,3 +20,7 @@ class Contact(models.Model):
     state = USStateField(null=True, blank=True)
     zip_code = USZipCodeField(null=True, blank=True)
     birthday = models.DateField(null=True, blank=True)
+
+# class Note(models.Model):
+#     contact = models.ForeignKey(to=Contact)
+#     note = models.Charfield(max_length=500)
