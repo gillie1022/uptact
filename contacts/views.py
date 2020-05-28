@@ -6,8 +6,7 @@ from .forms import ContactForm
 # Create your views here.
 def list_contacts(request):
     contacts = Contact.objects.all()
-    return render(request, "contacts/list_contacts.html",
-                  {"contacts": contacts})
+    return render(request, "contacts/list_contacts.html",{"contacts": contacts})
 
 def show_contact(request, pk):
     contact = get_object_or_404(Contact, pk=pk)
