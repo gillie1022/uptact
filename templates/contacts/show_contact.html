@@ -40,9 +40,11 @@
   </p>
 
   <div>
-    <div class="flex">
-      <div>{{ contact.note }}</div>
-      <div>{{ contact.note.time_stamp }}</div>
+    <div>
+      {% for note in contact.notes.all %}
+      <div>{{ note.text }}</div>
+      <div>{{ note.time_stamp }}</div>
+      {% endfor %}
     </div>
 
   </div>
