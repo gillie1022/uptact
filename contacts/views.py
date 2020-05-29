@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Contact
-from .forms import ContactForm
+from .models import Contact, Note
+from .forms import ContactForm, NoteForm
 
 
 # Create your views here.
