@@ -24,6 +24,9 @@ class Contact(models.Model):
 class Note(models.Model):
     contact = models.ForeignKey(to=Contact, 
                                 on_delete=models.CASCADE,
-                                related_name="notes")
+                                related_name="note")
     text = models.CharField(max_length=500, null=True, blank=True)
     time_stamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.text

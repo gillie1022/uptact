@@ -40,12 +40,10 @@
   </p>
 
   <div>
-    {% if note.text %}
     <div class="flex">
-      <div>{{ note.text }}</div>
-      <div>{{ note.time_stamp }}</div>
+      <div>{{ contact.note }}</div>
+      <div>{{ contact.note.time_stamp }}</div>
     </div>
-    {% endif %}
 
   </div>
 
